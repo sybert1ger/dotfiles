@@ -112,7 +112,10 @@ if ! shopt -oq posix; then
   fi
 fi
 [ -r /home/rick/.byobu/prompt ] && . /home/rick/.byobu/prompt   #byobu-prompt#
-. "$HOME/.cargo/env"
+
+if [ -f . "$HOME/.cargo/env" ]; then
+    . . "$HOME/.cargo/env"
+fi
 
 eval "$(starship init bash)"
 PROMPT_COMMAND="tab_title ; $PROMPT_COMMAND"
