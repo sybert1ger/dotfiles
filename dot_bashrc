@@ -114,7 +114,7 @@ fi
 [ -r /home/rick/.byobu/prompt ] && . /home/rick/.byobu/prompt   #byobu-prompt#
 
 if [ -f . "$HOME/.cargo/env" ]; then
-    . . "$HOME/.cargo/env"
+    . "$HOME/.cargo/env"
 fi
 
 eval "$(starship init bash)"
