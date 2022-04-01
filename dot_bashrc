@@ -113,7 +113,7 @@ if ! shopt -oq posix; then
 fi
 [ -r /home/rick/.byobu/prompt ] && . /home/rick/.byobu/prompt   #byobu-prompt#
 
-if [ -f . "$HOME/.cargo/env" ]; then
+if [ -f "$HOME/.cargo/env" ]; then
     . "$HOME/.cargo/env"
 fi
 
