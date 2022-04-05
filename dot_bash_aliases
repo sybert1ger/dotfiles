@@ -1,13 +1,52 @@
 ## Colorize the ls output ##
-alias ls='ls --color'
+## Colorize the ls output ##
+#alias ls='ls --color'
 
 ## Use a long listing format ##
-alias ll='ls -lah --color'
+
+#alias ll='ls -lah --color'
 
 ## Show hidden files ##
-alias l.='ls -d .* --color'
+#alias l.='ls -d .* --color'
 
 # make grep output colorful 
 alias grep='grep --color'
 
+# Changing "ls" to "exa"
+alias ls='exa --icons --color=always --group-directories-first'
+alias ll='exa -alF --icons --color=always --group-directories-first'
+alias la='exa -a --icons --color=always --group-directories-first'
+alias l='exa -F --icons --color=always --group-directories-first'
+alias l.='exa -a | egrep "^\."'
 
+
+#alias ls='ls --color'
+
+## Use a long listing format ##
+
+#alias ll='ls -lah --color'
+
+## Show hidden files ##
+#alias l.='ls -d .* --color'
+
+# make grep output colorful 
+alias grep='grep --color'
+
+# Changing "ls" to "exa"
+alias ls='exa --icons --color=always --group-directories-first'
+alias ll='exa -alF --icons --color=always --group-directories-first'
+alias la='exa -a --icons --color=always --group-directories-first'
+alias l='exa -F --icons --color=always --group-directories-first'
+alias l.='exa -a | egrep "^\."'
+
+# replace cat with bat
+alias cat='bat --paging=never'
+
+# replace vi with nvim if nvim is installed
+if hash nvim 2>/dev/null; then
+	alias vi='nvim'
+fi
+
+
+# function to create directory and change to it
+mcd () { mkdir -p $1; cd $1; }
