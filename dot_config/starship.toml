@@ -11,7 +11,7 @@ $python\
 $character"""
 
 [hostname]
-disabled = true
+disabled = false
 
 [directory]
 style = "blue"
