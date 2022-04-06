@@ -11,9 +11,12 @@ $python\
 $character"""
 
 [hostname]
+format = "on [$hostname ]($style)"
+style = 'green dimmed bold'
 disabled = false
 
 [directory]
+format = "in [$path]($style) "
 style = "blue"
 truncation_length = 0
 
@@ -23,7 +26,8 @@ error_symbol = "[](red)"
 vicmd_symbol = "[](green)"
 
 [git_branch]
-format = "[$branch]($style)"
+format = "[$symbol $branch]($style)"
+symbol = ""
 style = "bright-black"
 
 [git_status]
@@ -50,3 +54,9 @@ disabled = true
 format = "[$virtualenv]($style) "
 style = "bright-black"
 
+[username]
+format = '[$user]($style) '
+style_root = 'red bold'
+style_user = 'yellow bold'
+show_always = false
+disabled = false
