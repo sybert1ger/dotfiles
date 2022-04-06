@@ -15,6 +15,7 @@ disabled = false
 
 [directory]
 style = "blue"
+truncation_length = 0
 
 [character]
 success_symbol = "[](purple)"
