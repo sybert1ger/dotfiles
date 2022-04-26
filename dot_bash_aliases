@@ -50,3 +50,5 @@ fi
 
 # function to create directory and change to it
 mcd () { mkdir -p $1; cd $1; }
+
+alias rm='echo "You should use trash instead."; false'
