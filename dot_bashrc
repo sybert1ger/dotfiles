@@ -111,7 +111,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-[ -r /home/rick/.byobu/prompt ] && . /home/rick/.byobu/prompt   #byobu-prompt#
 
 if [ -f "$HOME/.cargo/env" ]; then
     . "$HOME/.cargo/env"
@@ -121,7 +120,6 @@ eval "$(starship init bash)"
 PROMPT_COMMAND="tab_title ; $PROMPT_COMMAND"
 
 [[ ${ZELLIJ:-"unset"} == "unset" ]] && zellij attach -c Main
-
 
 function tab_title {
   echo -n -e "\033]0;${PWD##*/}\007"
