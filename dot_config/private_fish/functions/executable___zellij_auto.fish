@@ -1,8 +1,8 @@
 #!/usr/bin/fish
 function __zellij_auto
 	
-	if set -q ZELLIJ
-		set ZJ_SESSIONS $(zellij list-sessions | string collect)
+	if set -q $ZELLIJ
+		set ZJ_SESSIONS (zellij list-sessions | string collect)
 		set NO_SESSIONS (echo $ZJ_SESSIONS | wc -l)
 
 	
