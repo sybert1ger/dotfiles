@@ -1,0 +1,10 @@
+# pack-refs with: peeled fully-peeled sorted 
+6cccd632821949d5c9bee1fd2c2cda4f18bf2dd3 refs/remotes/origin/animation
+da6bd3ba69e7d551d32324e5efeff31f45bbb479 refs/remotes/origin/docs/use-setup
+3eadb6a03ec914fbfe3eb246cc6e40708ee6039a refs/remotes/origin/fix-bbye-delete
+27c293c241aa5a3612a83d80c7d39ba054a60b40 refs/remotes/origin/fix-bdelete
+77dcf8730d52ecf23b43892d7b9ac9d7d086043f refs/remotes/origin/fix-buffer-closing-issues
+a451115aedb2440a089cc6c4ec8cf8204991cb06 refs/remotes/origin/fix-closing
+22e21e3f3e48ce30f48582f81bebfb97b016b9a3 refs/remotes/origin/lua-rewrite
+0bd9de963bcc5c35e9cb9f8bcf2035042927503f refs/remotes/origin/master
+7cd1f653bb68f03d8360caf547634575894dda6c refs/remotes/origin/perf/remove-local-globals
