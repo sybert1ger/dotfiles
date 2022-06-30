@@ -11,6 +11,7 @@ if status is-interactive
 
     abbr -a -g vi nvim
     abbr -a -g vim nvim
+    abbr -ag brew sudo -u linuxbrew /home/linuxbrew/.linuxbrew/bin/brew
 
     eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
     __zellij_auto
